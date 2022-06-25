@@ -37,7 +37,30 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+.header {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 1rem;
+    width: 100%;
+    height: var(--headear-height);
+    background-color: var(--second-color);
+}
+.header >.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
+.logo a{
+    color: var(--firts-color);
+    font-weight:bold ;
+    font-size: 2rem;
+    text-decoration: none;
+}
 
 /* *****menu**** */
 
