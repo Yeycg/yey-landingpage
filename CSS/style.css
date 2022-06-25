@@ -1,0 +1,88 @@
+/* Orden para maquetar
+ propiedades de modelo de caja (display, width height, margin, etc)
+ posicionamiento (position, top, left, rigth, etc)
+ tipografia
+ decoracion (backgraund,color, etc)
+ variables 
+ mixiens
+ */
+
+ :root {
+    --firts-color:#D90062;
+    --firts-alpha-color: rgba(217, 0, 98, 0.7);
+    --second-color: #14192D;
+    --second-alpha-color: rgba(20, 25, 45, 0.7);
+    --third-color: #501464;
+    --third-alpha-color: rgba(80, 20, 100, 0.7);
+    --white-color: #fff;
+    --gray-light-color: #f3f3f3;
+    --gray-color: #cccccc;
+    --gray-dark-color: #666666;
+    --black-color: #000000;
+    --link-color: #509ee3;
+    --title-color: #333333;
+    --text-color:#222222;
+    --white-aplha-color: rgba(255, 255, 255, 0.5);
+    --black-alpha-color: rgba(0, 0, 0, 0.5);
+ }
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* *****menu**** */
+
+.menu-btn {
+    outline: thin solid var(--firts-color);
+    border: 0;
+    cursor: pointer;
+    background-color: var(--second-color);
+   }
+   
+   .menu-btn svg {
+       fill: var(--firts-color);
+   }
+   
+   .menu {
+       position: fixed;
+       left: 0;
+       bottom: var(--headear-height);
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       opacity: 0;
+       pointer-events: none;
+       transition: opacity .5s ease;
+       background-color: var(--second-color);
+   }
+   
+   .menu.is-active{
+       opacity: 1;
+       pointer-events: auto;
+   }
+   
+   .menu a {
+       padding: 1rem;
+       font-size: 1.5 rem;
+       font-weight: bold;
+       text-align: center;
+       text-decoration: none;
+       color: var(--firts-color);
+   
+   }
+   
+   .menu a:hover {
+       color: white;
+       background-color: var(--firts-color);
+   }
+
+
