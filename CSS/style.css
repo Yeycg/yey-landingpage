@@ -8,9 +8,9 @@
  */
 
  :root {
-    --firts-color:#D90062;
+    --firts-color:#fff;
     --firts-alpha-color: rgba(217, 0, 98, 0.7);
-    --second-color: #14192D;
+    --second-color: #000;
     --second-alpha-color: rgba(20, 25, 45, 0.7);
     --third-color: #501464;
     --third-alpha-color: rgba(80, 20, 100, 0.7);
@@ -84,10 +84,11 @@ html {
    .menu {
        position: fixed;
        left: 0;
-       bottom: 1.6rem;
+       bottom: 6rem;
        width: 100%;
        display: flex;
        flex-direction: column;
+       font-size: 1.4rem;
        opacity: 0;
        pointer-events: none;
        transition: opacity .5s ease;
@@ -111,8 +112,16 @@ html {
    }
    
    .menu a:hover {
-       color: white;
+       color: gray;
        background-color: var(--firts-color);
    }
+
+/* Section one */
+
+main {
+    max-width: 1040px;
+    min-width: 300px;
+    margin: auto;
+}
 
 

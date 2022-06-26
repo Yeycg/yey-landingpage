@@ -1,7 +1,7 @@
 /*.**********menu*********. */
 ((d) =>{
     const $btnMenu = d.querySelector(".menu-btn"),
-    $menu = d.querySelector(".menu");
+     $menu = d.querySelector(".menu");
 
     $btnMenu.addEventListener ("click",(e) => {
         $btnMenu.firstElementChild.classList.toggle("none");
