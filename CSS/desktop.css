@@ -9,6 +9,7 @@
         flex-direction: row;
         opacity: 1;
         pointer-events: auto;
+        font-size: 1.6rem;
     }
 
 .menu a:hover {
@@ -21,6 +22,5 @@
    
 .header{
     position: sticky;
-    top: 0;
-    padding: 0.5rem;
+
     }

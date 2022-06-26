@@ -37,6 +37,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* menu de navegacion */
+
 .header {
     position: fixed;
     left: 0;
@@ -44,9 +46,10 @@ html {
     z-index: 999;
     padding: 1rem;
     width: 100%;
-    height: var(--headear-height);
+    height: 64px;
     background-color: var(--second-color);
 }
+
 .header >.container{
     display: flex;
     justify-content: space-between;
@@ -54,6 +57,7 @@ html {
     max-width: 900px;
     margin: 0 auto;
 }
+
 
 .logo a{
     color: var(--firts-color);
@@ -63,7 +67,9 @@ html {
 }
 
 /* *****menu**** */
-
+.none {
+    display: none;
+}
 .menu-btn {
     outline: thin solid var(--firts-color);
     border: 0;
@@ -86,6 +92,7 @@ html {
        pointer-events: none;
        transition: opacity .5s ease;
        background-color: var(--second-color);
+       
    }
    
    .menu.is-active{
@@ -95,7 +102,7 @@ html {
    
    .menu a {
        padding: 1rem;
-       font-size: 1.5 rem;
+       font-size: 1.6 rem;
        font-weight: bold;
        text-align: center;
        text-decoration: none;
