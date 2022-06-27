@@ -24,17 +24,15 @@
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4.5vw;
+}
+
+.hero-image__container p {
+    font-size: 3.5vw;
     font-weight: bold;
-    line-height: 1;
-}
+   
 
-p {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.5;
 }
-
 
 /* ******Hero Image***** */
 
