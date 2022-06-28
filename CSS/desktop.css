@@ -24,15 +24,16 @@
 }
 
 h1 {
-    font-size: 4.5vw;
+    font-size: 3.0vw;
 }
 
 .hero-image__container p {
-    font-size: 3.5vw;
+    font-size: 1.5vw;
     font-weight: bold;
    
 
 }
 
-/* ******Hero Image***** */
-
+.descriptive-section img{  
+    width: 500px;
+  }
