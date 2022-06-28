@@ -3,6 +3,12 @@
 
 }
 
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 h1 {
   font-size: 4.5vw;
 }
