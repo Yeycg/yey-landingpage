@@ -15,7 +15,7 @@
     --third-color: #501464;
     --third-alpha-color: rgba(80, 20, 100, 0.7);
     --white-color: #fff;
-    --gray-light-color: #f3f3f3;
+    --gray-light-color: #f9f9f9;
     --gray-color: #cccccc;
     --gray-dark-color: #666666;
     --black-color: #000000;
@@ -147,7 +147,7 @@ p {
     width: 100%;
     background-image: url(/assets/Hero-image.jpg);
     background-repeat: no-repeat;
-    background-size: 350px;
+    background-size: 450px;
     background-attachment: fixed;
 
 }
@@ -165,6 +165,7 @@ p {
     align-items: center;
     width: 100%;
     height: 225px;
+    color: var(--firts-color);
 
 }
 
@@ -208,6 +209,7 @@ h1 {
     justify-content: space-evenly;
     width: 100%;
     padding: 16px;
+    background-color: var(--gray-light-color);
 }
 
 .descriptive-section img{  
@@ -227,4 +229,64 @@ h1 {
 
 .descriptive-section__text p {
     margin-bottom: 16px;
+}
+
+
+/* *****Section Services*******/
+
+.Services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+
+.Services article {
+    width: 300px;
+    margin: 16px;
+    padding: 16px;
+}
+
+ article svg {
+    fill: var(--second-color);
+}
+
+.services__items .item-titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: var(--second-color);
+
+}
+
+.services__items .item-descrption {
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 300px;
+    width: 100%;
+    height: 300px;
+    background-color: black;
 }
