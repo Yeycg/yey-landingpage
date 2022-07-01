@@ -275,13 +275,13 @@ h1 {
     text-align: center;
 }
 
-.portafolio__grid {
+.portafolio-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr) ;
 }
 
-.portafolio__grid article {
+.portafolio__item {
     min-width: 320px;
     margin: 16px;
 }
