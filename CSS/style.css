@@ -273,22 +273,25 @@ h1 {
 #portafolio {
     width: 100%;
     text-align: center;
+    margin: auto;
 }
 
-.portafolio-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr) ;
+
+.portafolio-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 16px auto;
+    
 }
 
-.portafolio__item {
-    min-width: 320px;
-    margin: 16px;
-}
-
-article img {
+.portafolio__item img{
     width: 300px;
 }
+
+
 
 
 
