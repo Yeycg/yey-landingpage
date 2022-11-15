@@ -24,6 +24,11 @@
     --text-color:#222222;
     --white-aplha-color: rgba(255, 255, 255, 0.5);
     --black-alpha-color: rgba(0, 0, 0, 0.5);
+    --sm: 12px ;
+    --md: 16px ;
+    --lg: 24px;
+    --Xlg: 32px;
+
  }
 
  * {
@@ -34,7 +39,8 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto','Montserrat', sans-serif;
+    
     scroll-behavior: smooth;
 }
 
@@ -43,7 +49,7 @@ body{
 }
 
 main {
-    max-width: 1040px;
+    max-width: 1500px;
     min-width: 300px;
     margin: auto;
 }
@@ -134,6 +140,8 @@ p {
        background-color: var(--firts-color);
    }
 
+
+
 /* Section one */
 
 
@@ -206,7 +214,8 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 16px;
     background-color: var(--gray-light-color);
@@ -214,20 +223,22 @@ h1 {
 
 .descriptive-section img{  
     width: 300px;
+    margin: 16px;
 }
 
 .descriptive-section__text{
-    width: 300px;
     padding-top: 16px;
     margin: 0 16px;
 }
 
 .descriptive-section__text h2{
     margin-bottom: 16px;
-    text-align: center;
+    text-align: left;
+    font-size: var(--lg);
 }
 
-.descriptive-section__text p {
+.descriptive-section__text p:nth-child(2) {
+    font-size: var(--md);
     margin-bottom: 16px;
 }
 
@@ -242,12 +253,12 @@ h1 {
     justify-content: space-evenly;
     text-align: center;
     margin-bottom: 48px;
-
+   background-color: var(--gray-light-color);
 }
 
 
 .Services article {
-    width: 300px;
+    width: 310px;
     margin: 16px;
     padding: 16px;
 }
@@ -269,13 +280,153 @@ h1 {
 }
 
 
+
+
+
+.plans {
+    width: 100%;
+}
+
+.plans__title {
+    margin: 32px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.plans__title h2 {
+    font-size: 3.0rem;
+    line-height: 1.5;
+}
+
+.plans__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plans__items {
+    position: relative;
+    width: 70%;
+    min-width: 320px;
+    max-width: 350px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
+}
+
+.plans__items-title {
+    position: absolute;
+    top: -16px;
+    left:  calc(50% - 60px);
+    width: 130px;
+    height: 31px;
+    padding: 6px;
+    background-color: var(--second-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    color: var(--firts-color);
+}
+
+.plans__items-title--final-title {
+    height: 45px;
+}
+
+
+.plans__items-content {
+    padding-top: 50px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.plans__item-price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+
+.plans__item-price span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+    top: -25px;
+}
+
+.plans__items-content .Plans__item-text {
+ text-align: left;
+ padding-bottom: 36px;
+}
+
+.Plans__item-text p {
+    margin-bottom: 8px;
+}
+
+/* About*/
+
+.about {
+    margin-top: 32px;
+    width: 100%;
+ background-color: var(--gray-light-color);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: var(--Xlg);
+    text-align: center;
+    padding: 32px;
+}
+
+.about__Container-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+}
+
+.about__Container-text img {
+    width: 250px;
+}
+
+.about__text {
+    width: 300px;
+    font-family: 'Roboto' ;
+    font-size: var(--xlg);
+    font-weight: 400;
+    margin: 16px;
+}
+
+.about__text p:nth-child(1) {
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.about__text p:nth-child(2) {
+    font-size: var(--md);
+    margin-bottom: 32px;
+}
+
 /* *****Portafolio***** */
 
 #portafolio {
     width: 100%;
     text-align: center;
     margin: auto;
-    background-color: var(--gray-light-color);
 }
 
 .portafolio__title {
@@ -329,102 +480,223 @@ h1 {
     width: 300px;
     padding: 16px;
     text-align: left;
+    font-size: 14px;
 }
 
 
-.plans {
+
+
+
+ /*  Formulario De Contacto  */
+
+ .Contacto__container {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+ }
+
+ .Contacto{
+    min-height: 100vh;
     width: 100%;
-}
+    display: flex;
+ }
 
-.plans__title {
-    margin: 32px auto;
-    align-items: center;
+
+ .Contacto__title {
+    font-size: var(--Xlg);
     text-align: center;
-}
+    font-weight: bold;
+    padding-top: 32px;
+    color: var(--firts-color);
+ }
 
-.plans__title h2 {
-    font-size: 3.0rem;
-    line-height: 1.5;
-}
+ .form {
+    background-color: var(--firts-color);
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em .5em;
+ }
 
-.plans__container {
+ .form__container {
     width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+ }
+
+ .form__title  {
+    text-align: center;
+    font-size: 1.9em;
+ }
+
+ .form__input {
+    font-family: inherit;
+    font-size: 2rem;
+    padding: .8em 1em;
+    overflow: unset;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 0.2em;
+ }
+
+ .form__cta {
+    font-family: inherit;
+    font-size: 2rem;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    border: none;
+    font-weight: bold;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+ }
+
+ .form__input--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: 1.5em;
+ }
+
+
+
+
+
+
+/*TESTMONIO*/
+
+.testimonios {
+    background-color: var(--gray-light-color);
+}
+
+.testimonios__title {
+    padding-top: 32px;
+    text-align: center;
+    font-size: var(--md);
+}
+
+.testimonios__title h3 {
+    text-align: center;
+    font-size: var(--Xlg);
+}
+
+
+
+
+.testimonios__card-Container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: center;
 }
 
-.plans__items {
-    position: relative;
-    width: 70%;
-    min-width: 190px;
-    max-width: 300px;
-    height: 250px;
-    margin: 50px 5px 0;
-    padding: 0 15px;
-    background-color: var(--just-white);
+
+.testimonios__item {
+    width: 300px;
+    margin: 48px;
+    padding: 16px;
+    background-color: var(--firts-color);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgb(89 73 30 / 16%);
-}
-
-.plans__items-title {
-    position: absolute;
-    top: -16px;
-    left:  calc(50% - 60px);
-    width: 130px;
-    height: 31px;
-    padding: 6px;
-    background-color: var(--second-color);
-    font-size: 1.2rem;
-    font-weight: bold;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    color: var(--firts-color);
-}
-
-.plans__items-content {
-    padding-top: 50px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--black);
-    text-align: center;
-}
-
-.plans__item-price {
-    padding: 5px 0;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 5.3rem;
-    color: var(--black);
-}
-
-.plans__item-price span {
-    font-size: 1.2rem;
-    font-weight: 500;
-    position: relative;
-    top: -25px;
+    box-shadow: 0 4px 8px rgb(89 73 30 / 50%);
 }
 
 
 
 
+.testimonios__item div {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+}
+
+.testimonios__item  p {
+    
+    margin-top: 12px;
+    font-size: 14px;
+
+}
+
+.testimonios__item p:nth-child(2){
+    font-size: var(--lg);
+}
+
+.testimonios__item1 div {
+   background-image: url(/assets/Valeria.png) ;
+   background-size: cover;
+   background-position-x: center;
+   background-repeat: no-repeat;
 
 
+}
 
+.testimonios__item2 div {
+    background-image: url(/assets/Berni\ 1.png) ;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+ }
 
-
+ 
+ .testimonios__item3 div {
+    background-image: url(/assets/Ray.jpg) ;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+ }
 
 
 
 
 
 footer {
-    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
     width: 100%;
     height: 300px;
     background-color: black;
+    color: var(--firts-color);
+    text-align: center;
+
 }
+
+
+footer .logo {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales__item {
+    text-align: center;
+    margin-right: 16px;
+}
+
+.redes-sociales__item a {
+    text-decoration: none;
+    color: var(--firts-color);
+}
+
+.redes-sociales__item p {
+ font-size: var(--md);
+}
+
+.redes-sociales__item img {
+    width: 40px;
+}
+
+
+.coopyrigth {
+    margin-top: 32px;
+}
+
+

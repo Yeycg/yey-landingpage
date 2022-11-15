@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/tablet.css" media="(min-width: 760px)">
     <link rel="stylesheet" href="css/desktop.css" media="(min-width: 1024px)">
-    
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+ <link rel="icon" href="./assets/icons8-globo-48.png"> 
+    <title>Yey Castaño</title>
 </head>
 <body>
     <header class="header">
         <section class="container">
             <div class="logo">
-                <a href="index.html">Tu Logo o nombre</a>
+                <a href="index.html">Yey Castaño</a>
             </div>
             <button class="menu-btn">
              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/></svg>
              <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/></svg>
          </button>
          <nav class="menu">
-             <a href="#inicio">Inicio</a>
-             <a href="#acerca">Acerca</a>
              <a href="#servicios">Servicios</a>
-             <a href="#portafolio">Portafolio</a>
-             <a href="#contacto">contacto</a>
+             <a href="#acerca">Acerca de mí</a>
+             <a href="#contacto">Contacto</a>
          </nav>
      
  
@@ -36,93 +38,192 @@
     <section class="hero-image">
             <aside class="hero-image__opacity">
               <div class="hero-image__container">
-               <h1>Bienvenido a mi pagina web</h1>
-               <p>Aquí econtraras todo lo referente a mis servicios</p>
-               <a href="#portafolio" class="btn">Servicios</a>
+               <h1>Bienvenido a mi página web</h1>
+               
+               <a href="#servicios" class="btn">Servicios</a>
         
               </div>
             </aside>
         </section>
-    <section class="descriptive-section">
+    <section class="descriptive-section" id="servicios" data-aos="fade-right">
         <div class="descriptive-section__image">
             <img src="assets/section-2.jpg" alt="Escritura">
         </div>
         <div class="descriptive-section__text">
          <h2>
-            Ofrece de manera resumida tus servicios
+            Crea tu página web y potencia tu negocio.
          </h2>
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem fugit repellat repellendus quas accusantium consequuntur perferendis, vero odio nostrum? Laudantium sed odit eius magni molestiae eum expedita. Inventore, amet quaerat!</p>
+         <p>Una página web hoy en día es una prioridad. <br>
+            Te ayudo a crear tu espacio en Internet y así contarás con: 
+         </p>
          <ul>
-            <li><p>Articulos Seo</p></li>
-            <li><p>Uso correcto de las negritas</p></li>
-            <li><p>Imagenes libres de copyrigth</p></li>
-            <li><p>Investigación y analisis del tema a tratar</p></li>
+            <li><p>Un espacio donde ofrecer tus servicios.</p></li>
+            <li><p>La posibilidad de llegar a más personas y aumentar tu cartera de clientes.</p></li>
+            <li><p>Un diseño minimalista y eficaz.</p></li>
+            <li><p> Un diseño adaptable a todos los dispositivos.</p></li>
          </ul>
     </div>
     </section>
-    <section class="Services">
+    <section class="Services" data-aos="fade-right">
         <article class="services__items">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M22.9 43.95q-3.95-.2-7.4-1.85-3.45-1.65-6-4.325Q6.95 35.1 5.475 31.55 4 28 4 24q0-4.15 1.575-7.8Q7.15 12.55 9.85 9.85q2.7-2.7 6.35-4.275Q19.85 4 24 4q7.45 0 12.95 4.7 5.5 4.7 6.75 11.8h-3.05q-.85-4.2-3.55-7.5-2.7-3.3-6.75-4.95v.9q0 1.75-1.2 3.05-1.2 1.3-2.95 1.3h-4.35v4.35q0 .85-.675 1.4-.675.55-1.525.55H15.5V24H21v6.25h-3.35l-10.2-10.2q-.25 1-.35 1.975Q7 23 7 24q0 6.75 4.55 11.65t11.35 5.3Zm19.6-1.3-6.7-6.7q-1.05.75-2.275 1.15-1.225.4-2.525.4-3.55 0-6.025-2.475Q22.5 32.55 22.5 29q0-3.55 2.475-6.025Q27.45 20.5 31 20.5q3.55 0 6.025 2.475Q39.5 25.45 39.5 29q0 1.3-.425 2.525-.425 1.225-1.125 2.325l6.7 6.65ZM31 34.5q2.3 0 3.9-1.6t1.6-3.9q0-2.3-1.6-3.9T31 23.5q-2.3 0-3.9 1.6T25.5 29q0 2.3 1.6 3.9t3.9 1.6Z"/></svg>
-            <p class="item-titulo">Responsive & Multi-purpose</p>
-            <p class="item-descrption">Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.</p>
+            <img src="./assets/code.svg" alt="">
+            <p class="item-titulo">Desarrollo de sitio web </p>
+            <p class="item-descrption">Te ayudo a construir tu proyecto de principio a fin.</p>
         </article>
         <article class="services__items">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M7 35h34V13H7v22Zm0 3q-1.2 0-2.1-.925Q4 36.15 4 35V13q0-1.2.9-2.1.9-.9 2.1-.9h34q1.2 0 2.1.9.9.9.9 2.1v22q0 1.15-.9 2.075Q42.2 38 41 38Zm15.5-18.75h3v-3h-3Zm0 6.25h3v-3h-3Zm-6.15-6.25h3v-3h-3Zm0 6.25h3v-3h-3Zm-6.2 0h3v-3h-3Zm0-6.25h3v-3h-3ZM15 31.75h18v-3H15Zm13.7-6.25h3v-3h-3Zm0-6.25h3v-3h-3Zm6.15 6.25h3v-3h-3Zm0-6.25h3v-3h-3ZM7 35V13v22Z"/></svg>
-            <p class="item-titulo">Clean & Clear</p>
-            <p class="item-descrption">Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.</p>
+            <img src="./assets/file-text.svg" alt="">
+            <p class="item-titulo">Plantillas web</p>
+            <p class="item-descrption">Presentación de plantillas web. Escoge la que más se adapte a tu proyecto.</p>
         </article>
         <article class="services__items">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M18 5V2h12v3Zm4.5 22.35h3v-11.5h-3Zm1.5 16.6q-3.7 0-6.975-1.425Q13.75 41.1 11.3 38.65q-2.45-2.45-3.875-5.725Q6 29.65 6 25.95q0-3.7 1.425-6.975Q8.85 15.7 11.3 13.25q2.45-2.45 5.725-3.875Q20.3 7.95 24 7.95q3.35 0 6.3 1.125 2.95 1.125 5.25 3.125l2.55-2.55 2.1 2.1-2.55 2.55q1.8 2 3.075 4.85Q42 22 42 25.95q0 3.7-1.425 6.975Q39.15 36.2 36.7 38.65q-2.45 2.45-5.725 3.875Q27.7 43.95 24 43.95Zm0-3q6.25 0 10.625-4.375T39 25.95q0-6.25-4.375-10.625T24 10.95q-6.25 0-10.625 4.375T9 25.95q0 6.25 4.375 10.625T24 40.95ZM24 26Z"/></svg>
-            <p class="item-titulo">Best UX</p>
-            <p class="item-descrption">Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.</p>
+           <img src="./assets/service-design.svg" alt="">
+            <p class="item-titulo">Página web adaptable</p>
+            <p class="item-descrption">Diseño tu página web adaptable a distintos dispositivos (escritorio, móvil y tablet).</p>
         </article>
         <article class="services__items">
-            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6.15 36 4 33.85 18.6 19.3l8.35 8.35L39 15.6h-6.35v-3H44v11.35h-2.95V17.8L26.9 31.95l-8.35-8.35Z"/></svg>
-            <p class="item-titulo">Good Feedback</p>
-            <p class="item-descrption">Class aptent taciti sociosqu ad litora torquent conubia nostra, per inceptos himenaeos.</p>
+           <img src="./assets/search.svg" alt="">
+            <p class="item-titulo">Recursos para tu web</p>
+            <p class="item-descrption">Búsqueda de recursos, como imágenes o iconos, para aplicarlos a tu sitio web.</p>
         </article>
     </section>
 
-<section id="portafolio">
+
+
+<section class="plans" data-aos="flip-right">
+ <div class="plans__title">
+    <h2>Planes de Servicios</h2>
+    <p>Escoje el mejor plan para tu proyecto</p>
+ </div>
+  <section class="plans__container">
+ <article class="plans__items">
+    <p class="plans__items-title"> 1 Landing page</p>
+    <div class="plans__items-content">
+        <h3>Precio único</h3>
+        <p class="plans__item-price"><span>USD$</span>80</p>
+        <div class="Plans__item-text">
+        <p>- Sitio web funcional ✔️</p>
+        <p>- Plantilla para tu sitio web ✔️</p>
+        <p>- Número de páginas: 1 ✔️</p>
+        <p>- Entrega de archivos para subir a tu Hosting ✔️</p>
+        <p>- Imágenes sin Copyright para el contenido de la página ✔️</p>
+        <p>- Revisiones: 3 ✔️</p>
+    </div>
+    </div>
+ </article>
+
+ <article class="plans__items">
+    <p class="plans__items-title">Landing page pro</p>
+    <div class="plans__items-content">
+        <h3>Precio único</h3>
+        <p class="plans__item-price"><span>USD$</span>150</p>
+        <div class="Plans__item-text">
+        <p>- Sitio web funcional ✔️</p>
+        <p>- Plantilla para tu sitio web ✔️</p>
+        <p>- Numero de páginas: 1 ✔️</p>
+        <p>- Dominio y Hosting vigente por 1 año en Hostinger ✔️</p>
+        <p>- Comprobante SSL ✔️</p>
+        <p>- Correo coorporativo ✔️</p>
+        <p>- Imágenes sin Copyright para el contenido de la pagina ✔️</p>
+        <p>- Soporte Técnico gratis durante 15 días  ✔️</p>
+        <p>- Revisiones: 5 ✔️</p>
+
+      </div>
+        
+
+    </div>
+ </article>
+
+ <article class="plans__items">
+    <p class="plans__items-title plans__items-title--final-title">Landing Pages en Wordpress</p>
+    <div class="plans__items-content">
+        <h3>Precio único</h3>
+        <p class="plans__item-price"><span>USD$</span>180</p>
+        <div class="Plans__item-text">
+            <p>- Sitio web funcional ✔️</p>
+            <p>- Plantillas para tu sitio web ✔️</p>
+            <p>- Número de páginas: 2 ✔️</p>
+            <p>- Dominio y Hosting vigente por 1 año en Hostinger ✔️</p>
+            <p>- Comprobante SSL ✔️</p>
+            <p>- Instalación de Wordpress</p>
+            <p>- Instalación de tema para tu Wordpress</p>
+            <p>- Creación de apartado para un Blog personal ✔️ </p>
+            <p>- Entrega de usuario y contraseña para manipular el panel de control ✔️</p>
+            <p>- Correo coorporativo ✔️</p>
+            <p>- Imágenes sin Copyright para el contenido de la página ✔️</p>
+            <p>- Revisiones: 6 ✔️</p>
+            <p>- Soporte Técnico gratis durante 15 días  ✔️</p>
+            <p>
+            </p>
+    </div>
+    </div>
+ </article>
+ </section>
+</section>
+
+
+
+
+<section class="about" id="acerca" data-aos="zoom-in">
+
+    <h2>Conóceme</h2>
+    <div class="about__Container-text">
+        <img src="./assets/zyro-image.png" alt="">
+        <div class="about__text">
+            <p>Yey Castaño</p>
+            <p>¡Hola! Mi nombre es Yey Castaño
+                Durante cinco años me he dedicado al sector de ventas, pero mi pasión siempre ha sido la programación. Por esta razón hace dos años inicié mi camino de formación en esta profesión.
+                Actualmente manejo varias tecnologías como HTML, CSS, Git y Githud y también JavaScript. 
+                Igualmente desarrollo páginas webs con Wordpress y continúo formándome profesionalmente, ampliando mis habilidades para potenciar mis proyectos. 
+                Si quieres saber un poco más sobre mis trabajos, te invito a visitar mis redes sociales haciendo clic <a href="#footer">aquí</a> 
+            </p>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<section id="portafolio" data-aos="zoom-in-up" >
         <div class="portafolio__title">
         <h2>MOSTRAR NUESTRO PORTAFOLIO</h2>
         <p>Parte de mi trabajo realizado para varias marcas</p>
      </div>
         <section class="portafolio-cards">
-           <a href="#">
+           <a href="https://www.nubepsicologica.com/" target="_blank">
             <article class="portafolio__item">
                 <div>
-                <img src="assets/medico.jpg" alt="">
+                <img src="assets/Nubepsicologica.png" alt="">
             </div>
             <div>
-                <h3>Titulo de la web </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut, ea tenetur voluptatibus debitis soluta aperiam magnam cum dolores, ullam nam, expedita ut perferendis illum eum. Quis eveniet in a! </p></div>
+                <h3>Nubepsicologica.com</h3>
+                <p>Sitio web profesional/personal para brindar servicios psicológicos en modalidad virtual. Cuenta con un apartado de blog, con artículos relacionados a la salud mental.</p></div>
                
             </article>
           </a>
            
-          <a href="#">
+          <a href="https://metacryptoclub.io/" target="_blank">
             <article class="portafolio__item">
                 
              <div>
-                <img src="assets/books.jpg" alt="">
+                <img src="./assets/Metacripto.png" alt="">
              </div>
              <div>
-                <h3>Titulo de la web </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est ipsa tempore velit quos numquam illum culpa voluptate fugit recusandae odit dicta harum quisquam suscipit minus debitis veritatis, excepturi officia voluptas!</p>
+                <h3>Metacryptoclub.io</h3>
+                <p>Sitio web dedicado a la educación financiera en Crypto Monedas. En desarrollo. Actualmente cuenta con una web sencilla que recopila datos de los usuarioss interesados mientras se desarolla el proyecto final.</p>
             </div>
             
             </article>
          </a>
-           <a href=""> 
+           <a href="https://yeycg.github.io/wakanda-proyect/" target="_blank"> 
             <article class="portafolio__item">
                 
             <div>
-                <img src="assets/salud.jpg" alt="">
+                <img src="assets/wakanda.png" alt="" >
              </div>
              <div>
-                <h3>Titulo de la web </h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus autem doloribus cumque nisi, explicabo optio sint quaerat id velit odio aliquam, harum voluptas odit dolores. Placeat iste neque cupiditate mollitia.</p>
+                <h3>Wakanda Proyect </h3>
+                <p>Sitio web creado para practicar habilidades en CSS y HTML mediante una plantilla gratuita encontrada en figma.</p>
             </div>
             </article>
          </a>
@@ -130,48 +231,94 @@
 
 </section>
 
-<section class="plans">
- <div class="plans__title">
-    <h2>Planes de Servicios</h2>
-    <p>Escoje el mejor plan para tu trabajo</p>
- </div>
-  <section class="plans__container">
- <article class="plans__items">
-    <p class="plans__items-title">Articulo unico</p>
-    <div class="plans__items-content">
-        <h3>Precio por cada 100 palabras</h3>
-        <p class="plans__item-price"><span>$</span>0.50</p>
-        <p>Incluye imagenes sin coopyrigth, acordes a el articulo redactado</p>
-    </div>
- </article>
+<section class="Contacto__container" id="contacto" data-aos="fade-right">
 
- <article class="plans__items">
-    <p class="plans__items-title">Pack de 5 articulos</p>
-    <div class="plans__items-content">
-        <h3>Precio por cada 100 palabras</h3>
-        <p class="plans__item-price"><span>$</span>0.40</p>
-        <p>Incluye imagenes sin coopyrigth, acordes a los articulos redactados</p>
-    </div>
- </article>
+    <p class="Contacto__title"> ¿Quieres hablar conmigo? </p>
+     <div class="Contacto">
+    <form class="form"   action="https://formspree.io/f/mdojwdkk"
+    method="POST" >
+        <div class="form__container">
+            <h2 class="form__title">Contáctame</h2>
+            <input type="text" class="form__input" placeholder="Nombre" name="Name">
+            <input type="email" class="form__input" placeholder="E-mail" name="email">
+            <textarea class="form__input form__input--message" placeholder="Mensaje" name="message"></textarea>
 
- <article class="plans__items">
-    <p class="plans__items-title">Pack de 10 articulos</p>
-    <div class="plans__items-content">
-        <h3>Precio por cada 100 palabras</h3>
-        <p class="plans__item-price"><span>$</span>0.35</p>
-        <p>Incluye imagenes sin coopyrigth, acordes a los articulos redactados</p>
+            <input type="submit" value="Enviar" class="form__cta">
+        </div>
+    </form>
+     </div>
+</section> 
+
+ <section class="testimonios" data-aos="fade-left">
+    
+    <div class="testimonios__title">
+    <h3>Testimonios</h3>
+    <p>Conoce qué dicen mis clientes de mí</p>
+     </div>
+
+<div class="testimonios__card-Container">
+   
+ <div class="testimonios__item  testimonios__item1">
+         <div></div>
+    <p>Valeria Razzi</p>
+        <p>Me siento muy satisfecha con la página web que Yey me creó. Fue muy atento con los detalles y prestó atención a todos los elementos que yo quería que estuviesen presentes. Esta página web me ha ayudado a impulsarme profesionalmente.</p>    
+     </div>
+
+    <div class="testimonios__item testimonios__item2">
+        <div></div>
+        <p> Berni Pérez</p>
+        <p>Actualmente tengo el gusto de trabajar con Yey. Me siento muy confiado en su trabajo. Está esarrollando mi proyecto personal/profesional y lo ha hecho de manera impecable, siguiendo todas las pautas. Es una persona muy puntual a la hora de hacer su trabajo.</p>    
     </div>
- </article>
- </section>
+
+
+     <div class="testimonios__item testimonios__item3">
+        <div></div>
+        <p>Raimundo Rodríguez</p>
+        <p>He tenido el gusto de trabajar con Yey en varias ocasiones. Es una persona responsable y tiene mucha iniciativa que aportan grandes beneficios a los proyectos. </p>    
+     </div>
+   </div>
+
 </section>
 
-    <footer>
+    <footer id="footer"> 
+        <div class="logo">
+            <a href="index.html">Yey Castaño</a>
+        </div>
+
+        <div class="redes-sociales">
+            <div class="redes-sociales__item">
+             <a href="https://github.com/Yeycg" target="_blank">
+            <img src="./assets/github.svg" alt="">
+            <p>GitHud</p>
+            </a>
+            </div>
+
+            <div class="redes-sociales__item">
+                <a href="https://www.linkedin.com/in/yey-casta%C3%B1o-b37178195/" target="_blank">
+            <img src="./assets/linkedin.svg" alt="">
+                <p>Linkedin</p>
+            </a>
+            </div>
+
+            <div class="redes-sociales__item">
+                <a href="https://twitter.com/Yey_JCG" target="_blank">
+            <img src="./assets/twitter.svg" alt="">
+            <p>Twitter</p>
+           </a>
+            </div>
+        </div>
+          
+        <p class="coopyrigth">© 2022 Copyright Diseño Web: Yey Castaño</p>
 
     </footer>
 
 </main>   
 
         <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     
 </body>
 </html>

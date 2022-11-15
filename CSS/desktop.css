@@ -37,3 +37,17 @@ h1 {
 .descriptive-section img{  
     width: 500px;
   }
+
+ .about {
+  text-align: left;
+}
+
+
+  .about__Container-text img {
+    width: 350px;
+}
+
+
+.about__text {
+    width:50%;
+}
