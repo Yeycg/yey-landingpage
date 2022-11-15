@@ -45,6 +45,8 @@ html {
 }
 
 body{
+    max-width: 1500px;
+    min-width: 300px; 
     overflow-x: hidden;
 }
 
@@ -69,7 +71,7 @@ p {
     bottom: 0;
     z-index: 999;
     padding: 1.6rem;
-    width: 100%;
+    width: 100vw;
     height: 64px;
     background-color: var(--second-color);
 }
