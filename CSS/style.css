@@ -153,7 +153,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: url(./assets/Hero-image.jpg);
+    background-image: url(../assets/Hero-image.jpg);
     background-repeat: no-repeat;
     background-size: 450px;
     background-attachment: fixed;
@@ -623,7 +623,7 @@ h1 {
 }
 
 .testimonios__item1 div {
-   background-image: url(/assets/Valeria.png) ;
+   background-image: url(../assets/Valeria.png) ;
    background-size: cover;
    background-position-x: center;
    background-repeat: no-repeat;
@@ -632,7 +632,7 @@ h1 {
 }
 
 .testimonios__item2 div {
-    background-image: url(/assets/Berni\ 1.png) ;
+    background-image: url(../assets/Berni\ 1.png) ;
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -640,7 +640,7 @@ h1 {
 
  
  .testimonios__item3 div {
-    background-image: url(/assets/Ray.jpg) ;
+    background-image: url(../assets/Ray.jpg) ;
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
