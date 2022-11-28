@@ -375,6 +375,13 @@ h1 {
     margin-bottom: 8px;
 }
 
+.plans__item-recomendacion {
+ font-size: 14px;
+ font-weight: bold;
+ margin-top: 48px;
+ text-align: left;
+}
+
 /* About*/
 
 .about {
