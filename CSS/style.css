@@ -61,10 +61,11 @@ p {
 /* ******Cabecera****** */
 
 .header {
+    position: absolute;;
     width: 100%;
     background-color: var(--second-color);
     display: flex;
-    height: 100px;
+    z-index: 800;
 }
 
  .container {
@@ -73,6 +74,8 @@ p {
     display: flex;
     justify-content: space-around;
     margin: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 /* Meno escondido para los botones mobile   */
@@ -134,11 +137,13 @@ p {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: var(--black-color);
     width: 100% ;
     height: 100%;
     z-index: 1;
     opacity: .60;
+    margin: 0;
 
 
 }
@@ -706,6 +711,265 @@ footer .logo {
     margin-top: 32px;
 }
 
-@media (max-width: 1250px) {
-  /* … */
+@media (max-width: 999px) {
+  
+    .about {
+        display: none   ;
+    }
+
+    #portafolio {
+        display: none;
+    }
+
+    .Contacto__container {
+        display: none;
+    }
+ /* Menu Responsive  */
+
+ .menu {
+    display: none;
+ }
+
+ .menu-btn {
+    display: block;
+ }
+
+ /* Hero image  */
+
+
+ .hero-image-container {
+    width: 100vw;
+     height: 700px;
+ }
+
+
+ .hero-image-content {
+    width: 400px;
+    
+    }
+    
+    .hero-image-content h2 {
+        font-size: var(--lg);
+    }
+    
+    .hero-image-content  p {
+     font-size: var(--sm);
+     font-weight: 400;
+     
+    }
+    
+    .hero-image-content button {
+        width: 100px;
+        height: 40px;
+        background-color: #0077c0;
+        border: none;
+        color: var(--firts-color);
+        font-size:var(--md);
+        border-radius: 16px;
+        font-weight: bold;
+    }
+    
+
+
+    /* Seccion 2 */
+    .descriptive-section {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    
+    .descriptive-section-1 {
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        background-color: #000;
+        width: 400px;
+        height: auto;
+        padding: 16px;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    
+    
+    
+        
+    
+    }
+    
+    .descriptive-section__text{
+        display: block;
+        padding: 16px;
+    
+    
+    }
+    
+    .descriptive-section__text h2{
+        margin-bottom: 16px;
+        font-size: var(--md);
+    }
+    
+    .descriptive-section__text p:nth-child(2) { 
+        font-size: var(--sm);
+        margin-bottom: 16px;
+    }
+    
+
+
+    /* Benefits section */
+
+.benefits-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    right: 0;
+    top:0; 
+    z-index: 100;
+
+}
+
+.benefits-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end; 
+    width: 200px;
+    height: 150px;
+    margin: 16px;
+    background-color: var(--firts-color);
+    color: var(--black-color);
+    border-radius: 16px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+.benefits-item img {
+
+
+    width: 20px;
+    height: 15px;
+}
+
+.benefits-item .item-titulo {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.benefits-item .item-descrption {
+    font-size: 12px;
+
+}
+
+
+
+
+
+}
+
+@media (max-width: 500px) {
+
+    
+ .hero-image-container {
+    height: 600px;
+}
+
+.hero-image-content {
+    width: 250px;
+    
+    }
+    
+    .hero-image-content h2 {
+        font-size: var(--md);
+    }
+    
+    .hero-image-content  p {
+     font-size: 12px;
+     font-weight: 400;
+     
+    }
+    
+    .hero-image-content button {
+        width: 100px;
+        height: 40px;
+        background-color: #0077c0;
+        border: none;
+        color: var(--firts-color);
+        font-size:var(--md);
+        border-radius: 16px;
+        font-weight: bold;
+    }
+
+
+ /* Seccion 2 */
+ .descriptive-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.descriptive-section-1 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+
+
+
+    
+
+}
+
+.descriptive-section__text{
+    display: block;
+    padding: 16px;
+
+
+}
+
+.descriptive-section__text h2{
+    margin-bottom: 16px;
+    font-size: var(--sm);
+}
+
+.descriptive-section__text p:nth-child(2) { 
+    font-size: var(--sm);
+    margin-bottom: 16px;
+}
+
+
+
+/* Benefits section */
+
+.benefits-container {
+
+display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
