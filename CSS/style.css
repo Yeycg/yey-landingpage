@@ -60,86 +60,50 @@ p {
 }
 /* ******Cabecera****** */
 
-
-
 .header {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 999;
-    padding: 1.6rem;
     width: 100%;
-    height: 64px;
     background-color: var(--second-color);
-}
-
-.header >.container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
+    height: 100px;
 }
 
+ .container {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
 
-.logo a{
-    color: var(--firts-color);
-    font-weight:bold ;
-    font-size: 2rem;
+/* Meno escondido para los botones mobile   */
+
+
+.menu-btn {
+    display: none   ;
+}
+
+.logo a {
     text-decoration: none;
+    color: var(--firts-color);
+    font-size: var(--lg);
+    font-weight: bold;
 }
+
+
 
 /* *****menu**** */
-.none {
-    display: none;
+
+.menu  a {
+    text-decoration: none;
+    color: var(--firts-color);
+    margin: 16px;
+    font-size: var(--md);
+    font-weight: bold;
 }
-.menu-btn {
-    outline: thin solid var(--firts-color);
-    border: 0;
-    cursor: pointer;
-    background-color: var(--second-color);
-   }
-   
-   .menu-btn svg {
-       fill: var(--firts-color);
-   }
-   
-   .menu {
-       position: fixed;
-       left: 0;
-       bottom: 6rem;
-       width: 100vw;
-       display: flex;
-       flex-direction: column;
-       font-size: 1.4rem;
-       opacity: 0;
-       pointer-events: none;
-       transition: opacity .5s ease;
-       background-color: var(--second-color);
-       
-   }
-   
-   .menu.is-active{
-       opacity: 1;
-       pointer-events: auto;
-   }
-   
-   .menu a {
-       padding: 1rem;
-       font-size: 1.6 rem;
-       font-weight: bold;
-       text-align: center;
-       text-decoration: none;
-       color: var(--firts-color);
-   
-   }
-   
-   .menu a:hover {
-       color: gray;
-       background-color: var(--firts-color);
-   }
 
-
+.menu a:hover {
+    color: grey;
+}
 
 /* Section one */
 
@@ -160,6 +124,7 @@ p {
  left: 0;
  width: 100vw;
  height: 100vh;
+ overflow: hidden;
 
 
 }
@@ -223,7 +188,7 @@ color: var(--firts-color);
     height: 700px;
     padding: 16px;
     background-color: #0077c0;
-    background-image: url(/yey-landingpage/assets/services-container.jpg);
+    background-image: url('/assets/services-container.jpg');
     background-position: center;
     background-size: cover;
     color: var(--firts-color);
@@ -429,42 +394,36 @@ color: var(--firts-color);
 
 
 .about {
-
+    position: relative;
     width: 100%;
     background-color: black;
     text-align: center;
-    height: 700px;
+    height: 600px;
     color: var(--firts-color);
 }
 
-.About-container-content {
- position: absolute;
- bottom: 0;
 
-}
 
-.about h2 {
-    font-size: var(--Xlg);
-    text-align: center;
-    padding: 32px;
-    margin: 50px;   
-}
 
 .about__Container-text {
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
 
 }
 
 .about__Container-text img {
-    width: 650px;
+    width: 400px;
+    height: 400px;
 }
 
 .about__text {
-    width: 300px;
+    text-align: left;
+    width: 600px;
     font-family: 'Roboto' ;
     font-size: var(--xlg);
     font-weight: 400;
@@ -747,4 +706,6 @@ footer .logo {
     margin-top: 32px;
 }
 
-
+@media (max-width: 1250px) {
+  /* … */
+}
