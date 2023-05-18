@@ -196,7 +196,7 @@ color: var(--firts-color);
     width: 100%;
     height: 700px;
     padding: 16px;
-    background-image: url('/assets/services-container.jpg');
+    background-image: url("https://github.com/Yeycg/yey-landingpage/blob/main/assets/services-container.jpg?raw=true");
     background-position: center;
     background-size: cover;
     color: var(--firts-color);
