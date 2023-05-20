@@ -78,12 +78,15 @@ p {
     margin-bottom: 16px;
 }
 
-/* Meno escondido para los botones mobile   */
+/* Menu escondido para los botones mobile   */
 
 
 .menu-btn {
     display: none   ;
 }
+
+
+
 
 .logo a {
     text-decoration: none;
@@ -202,7 +205,7 @@ color: var(--firts-color);
 
 
   .menuMobile a {
-    font-size: var(--md);
+    font-size: var(--lg);
     text-align: center;
     text-decoration: none;
     color: var(--firts-color);
@@ -763,6 +766,8 @@ footer .logo {
 
  .menu-btn {
     display: block;
+    background-color: #000;
+    border: none;
  }
 
  /* Hero image  */
