@@ -133,7 +133,12 @@ p {
  overflow: hidden;
 
 
+
+
 }
+
+
+
 
 .overlay {
     display: block;
@@ -1146,3 +1151,19 @@ display: none;
 
 
 }
+
+@media (min-width: 2000px) {
+
+    .hero-image-video video {
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+       
+       
+       }
+    
+    }
